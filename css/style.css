@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
 
 a{
     text-decoration: none;
@@ -18,4 +24,118 @@ a{
     max-width: 550px;
     width: 100%;
     height: auto;
+}
+
+.line{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.line::before{
+    content: "";
+    position: absolute;
+    width: 3.75rem;
+    height: 0.25rem;
+    background-color: #01B1C9;
+    bottom: -0.35rem;
+}
+
+.line.text-center::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line.line-red::before{
+    background-color: #FC3F5B;
+}
+
+
+
+/*  */
+
+.big-heading{
+    font-size: 9vw;
+    color: #444648;
+    opacity: 0.22;
+    font-weight: 700;
+    line-height: 1;
+    text-align: end;
+}
+
+/* mobile-col-image */
+
+.mobile-row{
+    padding-top: 60px;
+}
+
+.mobile-col-image{
+    width: 290px;
+    margin-top: -60px;
+}
+
+
+/* border-line-dot */
+
+.border-line-dot{
+    position: relative;
+    padding-top: 20px;
+}
+
+.border-line-dot::before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 0.75rem);
+    height: 5px;
+    background: #dcf4f8;
+    top: 0;
+    left: 0;
+}
+
+
+.border-line-dot::after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #dcf4f8;
+    top: -6px;
+    left: 0;
+}
+
+/* .border-line-left-red */
+
+.border-line-left-red{
+    text-align: end;
+}
+
+.border-line-left-red::after, .border-line-left-red::before{
+    background: #fedee3;
+}
+
+
+.border-line-left-red::after{
+    left: auto;
+    right: 0;
+}
+
+.border-line-left-red::before{
+    left: auto;
+    right: 0;
+}
+
+
+
+@media (max-width: 567px) {
+    .line{
+        text-align: center;
+    }
+    .line::before{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .big-heading{
+        text-align: center;
+        font-size: 18vw;
+    }
 }
