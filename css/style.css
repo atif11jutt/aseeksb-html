@@ -73,6 +73,12 @@ a{
     margin-top: -60px;
 }
 
+.mobile-col-image2{
+    width: 580px;
+    margin-top: -200px;
+}
+
+
 
 /* border-line-dot */
 
@@ -122,6 +128,11 @@ a{
 .border-line-left-red::before{
     left: auto;
     right: 0;
+}
+
+.cam-icon{
+    width: 60px;
+    height: auto;
 }
 
 
