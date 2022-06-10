@@ -136,6 +136,31 @@ a{
 }
 
 
+/* Transparency */
+
+.text-purple{
+    color: #8F34D6;
+}
+
+/* feature */
+
+.feature_list li{
+    margin-bottom: 1rem;
+}
+
+.feature_icon{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+
+.feature-line{
+    height: 100%;
+    width: 1px;
+    border-left: 1px dashed #8F8F8F;
+    margin: auto;
+}
+
 
 @media (max-width: 567px) {
     .line{
