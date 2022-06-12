@@ -9,6 +9,8 @@ jQuery(function($){
         $(this).toggleClass("active").parent().find(".coming_item").slideToggle(400);
     });
 
-    
+    $(".accordion-button").click(function(){
+        $(this).parent().parent().toggleClass("active")
+    })
 
 })

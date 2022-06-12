@@ -197,6 +197,61 @@ a{
 }
 
 
+/* faq */
+
+.accordion-item{
+    padding: 1rem 1.25rem;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #949494 !important;
+    border-radius: 10px !important;
+    margin-bottom: 1.25rem;
+}
+
+.accordion-item.active{
+    background-color: #fff;
+    color: inherit;
+}
+
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    align-items: center;
+}
+
+.accordion-item.active .accordion-header{
+    font-weight: 500;
+}
+
+.accordion-button::after{
+    display: none;
+}
+
+.accordion-button.collapsed{
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    background-size: cover;
+    background-position: center center;
+    padding: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-image: url(../images/plus-circle.png);
+}
+
+.accordion-button{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position: center center;
+    padding: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+    background-image: url(../images/plus-circle1.png);
+}
+
 /* guidelines */
 
 .guidelines img{
