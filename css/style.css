@@ -262,6 +262,34 @@ a{
     border-right: 1px solid #00000030;
 }
 
+/* contact */
+
+#contact{
+    background-image: url(../images/contact-bg.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 6rem 0;
+}
+
+.social-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #8e8e8e;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.social-icon:hover{
+    color: #fff;
+    background-color: #FC3F5B;
+}
+
 /* footer */
 
 footer .navbar-nav{
